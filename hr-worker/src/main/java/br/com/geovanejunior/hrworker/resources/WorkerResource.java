@@ -35,7 +35,7 @@ public class WorkerResource {
     @GetMapping(value = "/configs")
     public ResponseEntity<Void> getConfigs() {
 
-        logger.info("\nCONFIG = " + testConfig);
+//        logger.info("\nCONFIG = " + testConfig);
         return ResponseEntity.noContent().build();
     }
 
@@ -50,7 +50,7 @@ public class WorkerResource {
     @GetMapping(value="/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
 
-                logger.info("\nPort = " + env.getProperty("local.server.port"));
+//        logger.info("\nPort = " + env.getProperty("local.server.port"));
 
         Worker worker = workerRepository.findById(id).get();
 
