@@ -3,7 +3,6 @@ package br.com.geovanegjunior.hruser.resources;
 import br.com.geovanegjunior.hruser.entities.User;
 import br.com.geovanegjunior.hruser.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
