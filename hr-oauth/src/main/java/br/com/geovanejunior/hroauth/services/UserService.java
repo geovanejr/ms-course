@@ -23,11 +23,11 @@ public class UserService implements UserDetailsService {
         User user = userFeignClient.findByEmail(email).getBody();
 
         if (user == null) {
-            logger.error("Email not found: " + email);
+//            logger.error("Email not found: " + email);
             throw new IllegalArgumentException("Email not found");
         }
 
-        logger.error("Email found: " + email);
+//        logger.error("Email found: " + email);
 
         return user;
     }
@@ -38,11 +38,11 @@ public class UserService implements UserDetailsService {
         User user = userFeignClient.findByEmail(username).getBody();
 
         if (user == null) {
-            logger.error("Email not found: " + username);
+//            logger.error("Email not found: " + username);
             throw new UsernameNotFoundException("Email not found");
         }
 
-        logger.error("Email found: " + username);
+//        logger.error("Email found: " + username);
 
         return user;
     }
